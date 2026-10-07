@@ -1,0 +1,1000 @@
+Q. Ansible inventory structure
+
+Q. Validating inventory before production & failed runs
+
+Q. Ansible secrets, no_log, and idempotency
+
+Q. Ansible unnecessary service restart troubleshooting
+
+
+
+
+Q1. What is a 502 Bad Gateway error? Why does it occur and how do you resolve it?
+
+Q2. What is a 503 Service Unavailable error? How would you troubleshoot it?
+
+Q3. How would you troubleshoot 502/503 errors end-to-end, starting from DNS/client request through Application Gateway or Load Balancer, networking, AKS/VM/App Service, and finally the application?
+
+Q4. Which Azure services/components would you check first while troubleshooting a 502/503 issue?
+
+Q5. How would you determine whether a 502/503 issue is caused by DNS, Application Gateway, Load Balancer, NSG, Firewall, AKS, VM, App Service, backend application, health probes or application code?
+
+Q6. After a deployment, CPU usage becomes very high on the server. What steps would you take?
+
+Q7. When CPU and memory are high, how would you troubleshoot the issue?
+
+Q8. How would you troubleshoot a slow application?
+
+Q9. An AWS EC2 instance is not reachable. How would you troubleshoot it?
+
+Q10. A deployment is successful but a smoke test fails. How would you investigate it?
+
+Q11. What would you check if an App Service deployment succeeds but the application is not coming up?
+
+Q12. What would you check if a Kubernetes Pod becomes inaccessible?
+
+Q13. What would you do if the Pod restarts again and again after deployment?
+
+Q14. No application deployment has happened for a week, but cloud cost has increased. How would you troubleshoot the cost increase?
+
+Q. Three-tier architecture kya hota hai?
+
+Q. Three-tier architecture mein first layer pe kya aata hai? Web, App aur DB?
+
+Q. Let's say you want to deploy an application to Azure without downtime. How will you approach?
+
+Q. Blue and Green kya hai?
+
+Q. What is Hub and Spoke architecture? Explain with respect to your project?
+
+Q. What have you put on Hub and Spoke?
+
+Q. What are the benefits of Hub and Spoke?
+
+Q. What is the difference between Application Gateway and Load Balancer?
+
+Q. What are the tiers on Application Gateway?
+
+
+
+
+Q. Have you worked on AWS? What are the checks on EC2?
+
+
+
+
+Q1. Have you worked with Azure App Service?
+
+Q2. How do you deploy applications to Azure App Service?
+
+Q3. Suppose there is a new PaaS service and you want to deploy a feature/code to it. What steps would you follow?
+
+Q4. How do you authenticate an App Service?
+
+Q5. Once code is deployed, the App Service is still not coming up. What would you check and how would you troubleshoot it?
+
+Q6. How would you restrict Dev/Test App Service environments from public access?
+
+Q7. How do you manage multiple App Service environments such as Dev, UAT and Prod?
+
+Q8. How do you promote application changes from lower environments to Production?
+
+Q9. Which PaaS services have you used apart from App Service?
+
+Q10. What is Azure Function and how can it be used in a CI/CD pipeline?
+
+Q11. Have you worked with Azure Static Web Apps?
+
+Q12. Have you worked with Azure AI Foundry?
+
+Q. What is Azure Application Gateway?
+
+Q. How does Application Gateway work?
+
+Q. How do you expose an AKS application through Application Gateway?
+
+Q. What is AGIC?
+
+Q. Does Application Gateway have a DNS name?
+
+Q. If you have only one App Service in the backend pool, is it still advisable to use Application Gateway?
+
+Q. When would you use Application Gateway even with a single backend?
+
+
+Q1. How does Azure Application Gateway work?
+
+Q2. What is configured in the Frontend IP Configuration of Application Gateway?
+
+Q3. What is configured in the Backend Pool of Application Gateway?
+
+Q4. If the backend application is running on AKS, what does Application Gateway point to?
+
+Q5. Since AKS node IPs can be dynamic, how does Application Gateway continue routing traffic correctly?
+
+Q6. How do you expose applications running inside Kubernetes through Application Gateway?
+
+Q7. How do you enable HTTPS end-to-end for an application?
+
+Q8. Besides opening port 443 in an NSG, what additional configuration is required for HTTPS?
+
+Q9. What Azure components participate in HTTPS communication?
+
+Q10. How would you restrict Dev/Test or other non-production URLs so that only approved internal users can access them?
+
+Q11. How would you implement access control for non-production environments using Application Gateway?
+
+Q12. Explain the complete end-to-end request flow from an Internet user to the application.
+
+Q13. What Azure components are involved in the end-to-end request flow?
+
+
+
+Q1. How do you set up DNS in Azure?
+
+Q2. How do you set up a domain in Cloudflare? Explain the steps.
+
+Q3. How would you troubleshoot a problem where DNS may be responsible for an application being
+
+
+
+
+Q1. How can you secure Azure endpoints using networking and Firewall?
+
+Q2. How do you configure rules inside Azure Firewall?
+
+Q3. How would you protect an application from DDoS/denial-of-service attacks?
+
+Q4. How do you secure an Azure Virtual Machine?
+
+Q5. How do you secure AKS from a networking and security perspective before provisioning it?
+
+Q6. What security considerations must be completed before creating an AKS cluster
+
+Q. What is an Azure Landing Zone?
+
+Q. What are the main components of an Azure Landing Zone?
+
+Q. What is the difference between Platform Landing Zone and Application Landing Zone?
+
+Q. How does Azure Landing Zone help with security and governance?
+
+
+Q1. What is included in your Azure Landing Zone?
+
+Q2. What resources have you created in an Azure Landing Zone?
+
+Q3. Which Azure resources are provisioned first in the Landing Zone?
+
+Q4. What is the order of resource creation in your Terraform-based Landing Zone deployment?
+
+Q5. How can you create an Azure Landing Zone without manually using click-click or writing everything from scratch?
+
+Q6. What is the Azure Accelerator approach/tool for Landing Zone deployment?
+
+Q7. Can you deploy a complete Azure Landing Zone in a single click?
+
+Q8. How would you design Terraform code for one-click Landing Zone deployment?
+
+Q9. How can you deploy many Azure Policies in one go instead of deploying them manually?
+
+Q10. How can you deploy RBAC across many resources and different Azure subscriptions?
+
+Q11. If there is a limit on how many Resource Groups can be provisioned in different Azure regions, how and where would you apply that limit?
+
+Q12. If a new employee deletes a Resource Group from the Azure Portal, how would you prevent or restrict such deletion?
+
+Q13. What are Azure Tags and how are they used for governance, ownership and cost management?
+
+Q. What is the difference between NSG and ASG?
+
+Q. What is the difference between NSG and Azure Firewall?
+
+Q. If both NSG and Azure Firewall have rules for the same traffic, which one takes priority?
+
+Q. Why do we need both NSG and Azure Firewall?
+
+Q. Why do we use multiple subnets?
+
+Q. What is subnet delegation?
+
+Q. What is Azure Private Link?
+
+Q. What is the difference between Private Link and Private Endpoint?
+
+Q. Do we need to create a separate Private Link resource when using a Private Endpoint?
+
+Q. How would an on-premises server access a private Azure Storage Account?
+
+Q. What is Site-to-Site VPN?
+
+Q. What are alternatives to Site-to-Site VPN?
+
+Q. How does ExpressRoute help in private connectivity?
+
+Q. If a Storage Account has a Private Endpoint but nslookup returns a public IP, what could be the issue?
+
+Q. How would you troubleshoot Private Endpoint DNS resolution?
+
+Q. Point-to-Site and Site-to-Site kya hai?
+
+Q. NSG mein inbound and outbound security rules kaise work karte hain? Port ke upar kaise control hota hai?
+
+Q. Rule priority kaise set karoge? Pehle Allow ki entry daloge ya Deny?
+
+Q. Suppose you want to securely connect Azure VNet to your on-premises data center. Kaise karoge?
+
+Q. Let's say you have a web app. Behind the web app you have an Azure Load Balancer, which is unreachable. VM is running fine and app process is healthy. So how are you going to resolve this issue?
+
+Q. Console pe hum kaha check krenge?
+
+Q. No public internet egress from my EKS or VM to Storage/Key Vault. Kya karoge?
+
+Q. Validate kaise krenge?
+
+Q. Suppose compliance team says: No public internet ingress from EKS/VM to my Storage and Key Vault. Kya karoge?
+
+Q. Private DNS mein kya liya?
+
+Q. Validate kaise karoge ki Private Endpoint/Private DNS properly working hai?
+
+Q. Security team says VM must not be publicly accessible. Azure VM has a Public IP. What will you do? Will you access this VM privately?
+
+Q. Multiple Azure subscriptions hain aur centralized management chahiye. Kaise karoge?
+
+Q. Company wants to prevent users from creating resources in unsupported regions. Sirf approved regions mein resources create hone chahiye. Kaise implement karoge?
+
+Q. Custom Policy kaise lagayenge? Management Group pe ya Subscription pe?
+
+Q. Suppose Azure VM running hai but RDP or SSH se connect nahi kar pa rahe. Kya-kya check karoge?
+
+
+
+Q1. What network topology are you using in your project?
+
+Q2. What is Hub-Spoke networking?
+
+Q3. How do you set up a Hub-Spoke network in an Azure Landing Zone?
+
+Q4. What services are provisioned in the Hub network?
+
+Q5. How many Spokes do you have?
+
+Q6. How do you decide application segregation across different Spokes?
+
+Q7. Explain the ingress and egress network flow in your architecture.
+
+Q8. If a Spoke needs to communicate with the Internet or an external system, what is the complete network flow?
+
+Q9. What are the different network hops involved in that flow?
+
+Q10. Explain the traffic flow from the Internet to a Spoke and back, including Firewall and UDRs.
+
+Q11. Give a practical example of an ingress traffic flow.
+
+Q12. What is the difference between a Private Endpoint and a Service Endpoint?
+
+Q13. How do you connect a database securely from the network?
+
+Q14. How do you automate Azure networking using Terraform?
+
+Q15. What Terraform commands would you use while automating Azure networking?
+
+Q16. How many types of load balancers are available in Azure?
+
+Q17. What is Azure Virtual WAN?
+
+Q18. Explain the difference between Point-to-Point VPN and Site-to-Site VPN.
+
+Q19. Have you worked on Point-to-Site VPN?
+
+Q20. Do you use any networking controller in your environment?
+
+Q21. Have you worked with ingress or egress controllers?
+
+Q22. How can you connect multiple clouds, such as Azure and AWS?
+
+Q. What is Azure RBAC?
+
+Q. Why is RBAC an important security pillar in Azure?
+
+Q. What are the different scopes of Azure RBAC?
+
+Q. How would you design a highly secure Azure application?
+
+Q. What Azure services would you use to secure an application?
+
+Q. How would you implement least-privilege access in Azure?
+
+Q. How would you handle secrets securely in Azure?
+
+Q. What would you do if a secret was accidentally committed to GitHub?
+
+Q. How would you identify an exposed secret in Git history?
+
+Q. What would you do first after discovering a secret in Git history?
+
+Q. How would you remove a secret from Git history?
+
+Q. Do you need to rewrite all Git commits to remove an exposed secret?
+
+Q. How would you prevent secrets from being committed again?
+
+Q. What are you doing for security purpose?
+
+Q. You have your credentials stored in your Key Vault, and you have to fetch those credentials. How will you fetch them?
+
+Q. What is a Fault Domain in Azure?
+
+
+Q. Security team requires reviewed plan and OIDC auth to Azure and environment approvals for Production. Kaise karoge?
+
+Q. Let's say you want to deploy an application to Azure without downtime. How will you approach?
+
+Q. CICD Pipeline is running fine, suddenly one bug came, how will you troubleshoot?
+
+Q. You have worked with CICD pipeline, can you explain your project CICD pipeline?
+
+Q. Just tell me any 1-2 issues which you faced in your CICD pipeline?
+
+Q. Your CICD pipeline is ADO, so what are you using to connect to Azure?
+
+Q. What are you using — Service Principal or Managed Identity?
+
+Q. Do you know about Service Principals?
+
+Q. You have a CICD pipeline, so how are you connecting your CICD Pipeline?
+
+
+
+Q1. Describe the CI/CD pipeline workflow.
+
+Q2. What are the stages of a CI/CD pipeline?
+
+Q3. Which CI/CD tools have you worked with?
+
+Q4. Which CI/CD tool are you currently using?
+
+Q5. What different pipelines have you created?
+
+Q6. What infrastructure pipelines have you implemented?
+
+Q7. What application deployment pipelines have you implemented?
+
+Q8. How do you build a CI/CD pipeline for application deployment?
+
+Q9. What strategy do you use for application deployment?
+
+Q10. What is the difference between classic deployment and CI/CD deployment?
+
+Q11. How do you secure a live CI/CD pipeline?
+
+Q12. If a deployment fails through a CI/CD/Jenkins pipeline, how would you troubleshoot it?
+
+Q13. If an error is found in the CI/CD code, what error/result would you expect and how would you resolve it?
+
+Q14. If a CI/CD run succeeds and you run the same code again, what result/message would you expect?
+
+Q15. How would you run parallel pipelines?
+
+Q16. How would you optimize pipelines to save time?
+
+Q17. What could be the possible reasons a CI/CD runner is not running?
+
+Q18. What is a variable group?
+
+Q19. Where do you store secrets used by pipelines in Azure?
+
+Q20. If pipeline secrets are leaked, what steps would you take?
+
+Q21. What day-to-day pipeline issues have you faced and how did you troubleshoot them?
+
+Q22. Deployment was successful but the smoke test failed. How would you troubleshoot it?
+
+Q23. What is GitLab CI/CD? Explain your experience/project using it.
+
+Q24. What are Git hooks and where are they used?
+
+
+
+
+Q1. Which tools can be used for Azure/cloud cost optimization?
+
+Q2. How do you optimize infrastructure cost?
+
+Q3. How do Azure Tags help with cost allocation and governance?
+
+Q4. If no deployment has happened for a week but the cloud cost has increased, how would you troubleshoot it?
+
+
+
+
+Q1. What is rolling deployment?
+
+Q2. What is the difference between canary deployment and rolling deployment?
+
+Q3. Which deployment approach do you currently follow in your project?
+
+Q4. How would you choose a deployment strategy for an application?
+
+
+
+Day-to-day DevOps activity mein zyada common hai:
+
+--> Existing Service Connection ko pipeline mein use karna
+
+-->Authorization/permission check karna
+
+--> Authentication failure troubleshoot karna
+
+--> Expired secret/certificate ko renew/update karna
+
+--> New subscription/environment aaye to naya Service Connection create karna
+
+--> Dev/Test/Prod ke connections manage karna
+
+--> I work on Terraform for provisioning and managing Azure infrastructure.
+
+--> I create and modify Terraform modules, variables, resources, and reusable configurations as per project requirements.
+
+--> I manage Terraform state, remote backend, state locking, and troubleshoot state-related issues.
+
+--> I create Terraform plans, review the changes, and apply them through Azure DevOps pipelines.
+
+--> I work on Azure DevOps YAML pipelines for CI/CD and troubleshoot pipeline failures.
+
+--> I manage pipeline variables, variable groups, artifacts, approvals, and existing service connections.
+
+--> I work with Kubernetes for application deployment and manage pods, deployments, services, ConfigMaps, and Secrets.
+
+--> I troubleshoot Kubernetes issues such as CrashLoopBackOff, ImagePullBackOff, pending pods, and failed deployments usin
+g kubectl, logs, and events.
+
+--> I monitor Azure infrastructure and applications using Azure Monitor and Log Analytics and troubleshoot alerts and performance issues.
+
+--> I integrate Terraform security and linting tools such as Checkov, TFLint, TFSEC, or Terrascan into the CI/CD pipeline.
+
+--> I work with Git for branching, commits, pull requests, code reviews, and merge activities.
+
+--> I also handle deployment issues, production incidents, root-cause analysis, and coordinate with development and other teams.
+
+
+
+
+
+1. What is Docker, and why is it used in DevOps?
+2. What is the difference between a Docker Image and a Docker Container?
+3. What is a Dockerfile? Explain the commonly used Dockerfile instructions.
+4. What is the difference between CMD and ENTRYPOINT?
+5. What is the difference between COPY and ADD? When would you use each?
+6. What is the difference between ARG and ENV in Docker?
+7. How do you build, tag, run, and push a Docker image?
+8. What are Docker image layers, and how does Docker layer caching work?
+9. How would you reduce the size of a Docker image?
+10. What is a multi-stage Docker build, and why is it useful?
+11. What happens internally when you execute docker run?
+12. What are Docker volumes? How do you persist data generated by a container?
+13. What is Docker networking? Explain Bridge, Host, and None network modes.
+14. How do two Docker containers communicate with each other?
+15. What is the difference between EXPOSE and -p in Docker?
+16. A Docker container starts and immediately exits. How would you troubleshoot it?
+17. A container is running, but the application is not accessible from outside. How would you troubleshoot it?
+18. How do you securely manage secrets in Docker? Why should secrets not be hardcoded in a Dockerfile?
+19. How do you scan Docker images for vulnerabilities? What would you do if a critical CVE is found?
+20. How do you build and deploy a Docker image to Azure Container Registry (ACR) and then deploy it to AKS?
+
+Q1. If a developer gives you application code, how would you deploy it into Docker?
+
+Q2. How would you secure Docker? What steps would you take?
+
+Q3. How does Kubernetes consume an image stored in Azure Container Registry?
+
+Q4. Why would you prefer ACR over Docker Hub in an enterprise Azure environment?
+
+
+
+Q. What are the Disaster Recovery strategies?
+
+Q. What is RTO and RPO?
+
+
+Q1. What are RTO and RPO?
+
+Q2. Which DR services are you using in your infrastructure?
+
+Q3. Suppose your site goes down. How would you connect/fail over to DR?
+
+Q4. Which service comes up first when DR is enabled?
+
+Q5. How would you design infrastructure so that it can scale beyond the initially provisioned capacity?
+
+
+
+Q. What is FinOps? How have you used FinOps in your project?
+
+
+
+Q. Tell me about yourself.
+
+Q. Tell me about your day-to-day activities.
+
+Q. What are the most commonly used DevOps tools?
+
+Q. What is a Pull Request in DevOps?
+
+Q. What are the three best practices in Azure DevOps?
+
+Q. What is the role of a Scrum Master in Azure Boards?
+
+Q1. Tell me about yourself.
+
+Q2. Introduce yourself without discussing your professional experience.
+
+Q3. Briefly explain what you are currently working on in your project/organization.
+
+Q4. Explain the work you have done in the last one or two years.
+
+Q5. Explain the data flow in your project.
+
+Q6. Explain your Azure architecture at a high level.
+
+Q7. Which cloud are you currently working on?
+
+Q8. What application stacks are running in your project?
+
+Q9. Which databases have you used in your project?
+
+Q10. How did you perform capacity planning for your project?
+
+Q11. How would you rate yourself in Azure App Service?
+
+Q12. How strong is your Linux experience?
+
+Q13. How much exposure do you have to AKS?
+
+
+
+## Kubernetes (K8s) Questions
+Q. What is ResourceQuota in Kubernetes?
+
+Q. What is LimitRange in Kubernetes?
+
+Q. Difference between ResourceQuota and LimitRange?
+
+Q. How do we define secrets in Kubernetes manifest file?
+
+Q. How to create and mount secrets in Kubernetes?
+
+Q. Sample Kubernetes secret manifest?
+
+Q. Difference between kubectl create and kubectl apply?
+
+Q. If we use kubectl create for an existing resource, what happens?
+
+Q. What is Kubernetes Ingress?
+
+Q. How many ways can we route traffic using Ingress?
+
+Q. Explain Ingress architecture flow.
+
+Q. How does Ingress receive traffic?
+
+Q. What are the different types of Kubernetes probes?
+
+Q. Can we configure readiness probe without database connectivity?
+
+Q. What is the sequential order of Kubernetes probes?
+
+Q. How to mount ConfigMap into Deployment?
+
+Q. How does Deployment fetch ConfigMap values?
+
+Q. Kubernetes commands to check database connectivity?
+
+Q. Linux commands to check database connectivity?
+
+Q. What is the purpose of nslookup?
+
+Q. What is PodDisruptionBudget (PDB)?
+
+Q. Why do we use PDB?
+
+Q. Does PDB protect against node failure?
+
+Q. Difference between minAvailable and maxUnavailable in PDB?
+
+Q. Is it mandatory to use both minAvailable and maxUnavailable?
+
+Q. Difference between StatefulSet and Deployment?
+
+Q. Give an example of StatefulSet.
+
+Q. How to integrate ELK monitoring with Kubernetes?
+
+Q. How to troubleshoot when Kubernetes logs are not coming?
+
+Q. Pods are running and logs are generating, but logs are not visible in Kibana. How to troubleshoot?
+
+Q. How to optimize Docker images?
+
+Q. How to deploy a new microservice into Kubernetes cluster?
+
+Q. Pod is in CrashLoopBackOff. How to troubleshoot?
+
+Q. Pod is in ImagePullBackOff. How to troubleshoot?
+
+Q. Application returning 401 Unauthorized. How to fix?
+
+Q. What is the basic structure of a Helm chart?
+
+Q. What files are required to deploy a microservice using Helm?
+
+Q. What is tpl function in Helm?
+
+Q. Is tpl a reusable function?
+
+Q. What are Helm hooks?
+
+Q. Why do we use Helm hooks?
+
+Q. What are different types of Helm hooks?
+
+Q. Real-time example of Helm hook usage.
+
+Q. What is Docker?
+
+Q. Why do we use Docker?
+
+Q. Explain Docker architecture.
+
+Q. Advantages and disadvantages of Docker.
+
+Q. Provide a sample Dockerfile.
+
+Q. Difference between CMD and ENTRYPOINT.
+
+Q. How to optimize Docker image size?
+
+Q. What services are provided by Terraform Enterprise?
+
+Q. What is a Terraform Enterprise workspace?
+
+Q. Workspace vs reusable Terraform module?
+
+Q. If you can choose only one between workspace and module, which one will you choose?
+
+Q. What is Terraform state file?
+
+Q. Why do we need Terraform state?
+
+Q. Can Terraform state file get corrupted?
+
+Q. How to recover a corrupted Terraform state file?
+
+Q. What are the different Terraform blocks?
+
+Q. In Terraform, how do you make an EC2 instance public or private?
+
+Q. EKS upgrade failed because of PDB. How do you troubleshoot?
+
+Q. How do you fix PDB blocking EKS node upgrade?
+
+Q. How do you design Kubernetes workloads for node failure protection?
+
+Q. How to migrate from ADFS to Azure AD (Entra ID)?
+
+Q. Azure VM is running but unable to SSH/RDP. How to troubleshoot?
+
+Q. Azure Application Gateway returning 502. How to fix?
+
+Q. Difference between Azure Load Balancer and Application Gateway?
+
+Q. When will you use Azure Load Balancer vs Application Gateway?
+
+Q. Production Pod is running but users cannot access the application. How to troubleshoot?
+
+Q. Application Gateway backend is unhealthy. What checks will you perform?
+
+Q. Application is returning 401 error. How to troubleshoot?
+
+Q. Kubernetes application logs are not reaching ELK/Kibana. How to troubleshoot?
+
+Q. Production deployment is failing. What steps will you check?
+
+Q. Application is slow after deployment. How will you troubleshoot?
+
+Q. What is Kubernetes?
+
+Q. Why do we use Kubernetes?
+
+Q. Have you created a Kubernetes/AKS cluster yourself?
+
+Q. How would you integrate Azure Key Vault with AKS?
+
+Q. What is the CSI driver?
+
+Q. What is the difference between Workload Identity and Managed Identity?
+
+Q. What is a SecretProviderClass?
+
+Q. Which Kubernetes manifest would you use to access Azure Key Vault?
+
+Q. How do you mount a ConfigMap into a Pod?
+
+Q. Where do volumes and volumeMounts go in a Pod specification?
+
+Q. What are the different ways to consume a ConfigMap?
+
+Q. What is Cluster Autoscaler?
+
+Q. What are the use cases of Cluster Autoscaler?
+
+Q. What is the difference between HPA and Cluster Autoscaler?
+
+Q. How do you make a Kubernetes application highly available and scalable?
+
+Q. How do Pods communicate with each other?
+
+Q. How would you establish communication between Pods running in different AKS clusters?
+
+Q. If two AKS clusters are in the same VNet, how would you establish communication between their Pods without VNet peering?
+
+Q. What is Helm?
+
+Q. Why do we use Helm in Kubernetes?
+
+Q. How would you secure a Kubernetes application?
+
+Q. What is RBAC in Kubernetes?
+
+Q. What are NetworkPolicies?
+
+Q. What are Pod Security Standards?
+
+Q. What are liveness and readiness probes?
+
+Q. What is a ConfigMap?
+
+Q. What is the purpose of using ConfigMaps?
+
+Q. Kubernetes rollout showing old behavior
+
+Q. Kubernetes troubleshooting (Pod → Service → Ingress)
+
+Q. Kubernetes node capacity & scheduling issues
+
+Q. Terraform dependency upgrade replacing critical infrastructure
+
+Q. Terraform apply failure & state recovery
+
+Q. Production approval flow and troubleshooting
+
+
+
+
+Q1. Why do we use Kubernetes?
+
+Q2. Have you worked on Kubernetes? Explain what you have done.
+
+Q3. What exactly have you done in AKS?
+
+Q4. Which service can be used for a serverless-style container deployment when AKS is not required? (Container Apps)
+
+Q5. Before provisioning an AKS cluster, what networking considerations must be taken care of?
+
+Q6. Before provisioning an AKS cluster, what security considerations must be taken care of?
+
+Q7. What networking configuration is required before creating an AKS cluster?
+
+Q8. Is your AKS cluster private or public?
+
+Q9. What is the difference between a private and a public AKS cluster?
+
+Q10. How do you determine whether an AKS cluster is private or public?
+
+Q11. How would you create and configure a private AKS cluster in Azure?
+
+Q12. How do you expose applications running inside Kubernetes?
+
+Q13. Once a Docker image is stored in ACR, how does Kubernetes use it?
+
+Q14. If a developer gives you application code, how would you deploy it in Docker and then Kubernetes?
+
+Q15. What is self-healing in Kubernetes?
+
+Q16. What is CrashLoopBackOff?
+
+Q17. If a Pod keeps restarting repeatedly, what troubleshooting steps would you take?
+
+Q18. If a Pod becomes inaccessible after deployment, how would you detect and troubleshoot it?
+
+Q19. If one Pod is inaccessible while the other nine are working, how would you troubleshoot it?
+
+Q20. How would you troubleshoot a Kubernetes cluster that failed to build because of a missing file/configuration?
+
+Q21. How would you handle a Kubernetes version upgrade when existing Pods/workloads use an older version?
+
+Q22. What is HPA in Kubernetes?
+
+Q23. What is horizontal scaling and vertical scaling?
+
+Q24. Which scaling approach would you prefer, horizontal or vertical, and why?
+
+Q25. Suppose a sudden increase in traffic is expected. What would you consider and how would you prepare the Kubernetes environment?
+
+Q26. If an AKS workload grows beyond the initially provisioned capacity, how would you deploy additional infrastructure?
+
+Q27. Why do you store Docker images in ACR instead of Docker Hub?
+
+
+
+
+Q1. How can you access a Linux server without using a password?
+
+Q2. Explain how SSH authentication works.
+
+Q3. What happens internally when SSH authentication occurs?
+
+Q4. Why do we have both a Public Key and a Private Key?
+
+Q5. Where is the Public Key stored?
+
+Q6. Where is the Private Key stored?
+
+Q7. How do the Public and Private Keys work together?
+
+Q8. Why are two keys required instead of one?
+
+Q9. How do you configure SSH key authentication?
+
+Q10. Why is port 22 used for SSH?
+
+Q11. How can you change the default SSH port?
+
+Q12. Which Linux configuration file is modified to change the SSH port?
+
+Q13. After changing the SSH port, how will users connect to the server?
+
+Q14. How would you troubleshoot SSH connectivity issues?
+
+
+
+
+Q1. Which monitoring tools are you using in your project?
+
+Q2. Which monitoring tools have you used?
+
+Q3. What is your overall approach to logging, monitoring and observability across the platform?
+
+Q4. Why are you using Azure Monitor?
+
+Q5. How does Azure Monitor work internally?
+
+Q6. How are logs collected in Azure Monitor?
+
+Q7. What is the role of Log Analytics Workspace?
+
+Q8. How do you build dashboards and monitor application/infrastructure metrics?
+
+Q9. How do you connect monitoring of a monolithic application to Grafana?
+
+Q10. What APM tools have you used?
+
+Q11. How does New Relic work?
+
+Q12. How does Azure Monitor compare with New Relic?
+
+Q13. Have you worked with Azure Data Factory?
+
+Q14. Have you worked with Apache Airflow?
+
+Q. Kubernetes rollout showing old behavior
+
+Q. Kubernetes troubleshooting (Pod → Service → Ingress)
+
+Q. Kubernetes node capacity & scheduling issues
+
+Q. Terraform dependency upgrade replacing critical infrastructure
+
+Q. Terraform apply failure & state recovery
+
+Q. Production approval flow and troubleshooting
+
+Q. How would you integrate Prometheus with an AKS cluster?
+
+Q. What are the steps to configure Prometheus monitoring in AKS?
+
+Q. How would you integrate Grafana with Prometheus?
+
+Q. What metrics would you monitor in an AKS cluster?
+
+Q. What is the difference between Prometheus and Grafana?
+
+Q. How would you configure alerts for an AKS application using Prometheus and Grafana?
+
+Q1. Which security tools are you using as part of a DevSecOps approach?
+
+Q2. How do you secure a live CI/CD pipeline?
+
+Q3. How do you secure Docker?
+
+Q4. How do you secure Terraform secrets?
+
+Q5. Where do you store Azure/pipeline secrets?
+
+Q6. What steps would you take if secrets are leaked?
+
+Q7. How do you secure a Virtual Machine?
+
+Q8. How do you secure AKS before provisioning it?
+
+Q9. How do you restrict access to non-production application endpoints?
+
+Q10. How do you protect applications against DDoS/denial-of-service attacks?
+
+Q. What is Terraform?
+
+Q. What are the disadvantages or challenges of using Terraform?
+
+Q. What is Terraform State?
+
+Q. What happens if the Terraform state file is deleted and there is no backup?
+
+Q. How would you identify which Azure resources were managed by Terraform after losing the state file?
+
+Q. Once you identify those resources, how would you rebuild the Terraform state?
+
+Q. What is the difference between Terraform Import and Terraform Refresh?
+
+Q. In case of infrastructure drift, would you use Terraform Import or Refresh?
+
+Q. What are Terraform Modules?
+
+Q. How do you call a Terraform module from another Git repository?
+
+Q. How do you refer to a specific Git tag while consuming a Terraform module?
+
+Q. Which Terraform version have you worked with?
+
+Q. What is the difference between count and for_each?
+
+Q. When would you use count and when would you use for_each?
+
+Q. Have you used null_resource?
+
+Q. What are Terraform provisioners?
+
+Q. What is the difference between local-exec and remote-exec?
+
+Q. Why should provisioners generally be avoided in Terraform?
+
+Q. You have one state file in your storage account in your project and that state file is moved to another place. In that case, what will happen if you run terraform plan?
+
+
+Q. What is the basic difference between terraform plan and terraform apply?
+
+Q. What is a Terraform state file, and why is it important?
+
+Q. What is the use of output variables in Terraform?
+
+Q. What is a Terraform backend?
+
+Q. What is the difference between for_each and count in Terraform?
+
+Q. Can you specify the number of resources using count in Terraform?
+
+Q. What is a data source in Terraform?
+
+Q. What is the command to upgrade provider versions in Terraform?
+
+Q. What is the purpose of the .terraform.lock.hcl file?
+
+Q. What is HCL in Terraform?
+
+Q. What is the purpose of the terraform graph command?
+
+Q. How do you prevent accidental resource deletion in Terraform?
+
+Q. How do you handle resource naming conflicts in Terraform?
+
+Q. What is the purpose of Terraform state commands?
